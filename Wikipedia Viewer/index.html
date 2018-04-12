@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="text-center">
+        <h1>Wikipedia Viewer</h1>
+        <h5>Created By: Justin Kipling</h5>
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="blank">
+                <img src="data:image/png;base64,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" alt="">
+                <p>Click the Shuffle Icon for a Random Artice</p>
+            </a>
+    </div>
+        <div>
+            <input class="form-control" id="searchTerm">
+            <button id="search" type="button" class="btn btn-primary">Submit</button>
+        </div>
+        <ul id="output">
+
+        </ul>
+</div>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
